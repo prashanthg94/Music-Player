@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="/style.css">
+    <link rel="icon" type="image/png" href="ImgMusic/icons8-music-48.png" />
+
+
+    <script src="https://kit.fontawesome.com/39bb172bd7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="musicplayer">
+            <nav>
+                <div class="circle">
+                    <i class="fa-solid fa-angle-left"></i>
+                </div>
+                <div class="circle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </nav>
+
+            <div class="album-art"><img id="cover-image" src="ImgMusic/Nane Bhagyavathi.jpg" alt="album" width="250"
+                    height="250"></div>
+
+            <div>
+                <h3 id="songname">Nane Bhagyavanta</h2>
+                    <marquee behavior="alternate" scrollamount="3" direction="left"><h5 id="singers">singers: S.Janaki | Dr.Rajkumar</h5></marquee>
+            </div>
+
+            <div>
+                <audio id="song">
+                    <source src="ImgMusic/Naane Bhagyavathi (PenduJatt.Com.Se).mp3">
+                </audio>
+
+                <input type="range" id="range" value="0">
+
+            </div>
+            <div id="controls">
+                <div onclick="backwardSong()"><i class="fa-solid fa-backward" id="backward"></i> </div>
+                <div onclick="playSong()"> <i class="fa-solid fa-play" id="play"></i></div>
+                <div onclick="forwardSong()"> <i class="fa-solid fa-forward" id="forward"></i> </div>
+            </div>
+
+
+        </div>
+
+
+        <script src="/script.js"></script>
+</body>
+
+</html>
