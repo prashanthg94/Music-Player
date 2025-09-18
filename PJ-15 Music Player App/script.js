@@ -124,3 +124,4 @@ let colorInterval = null;
 
 
 loadSong(nextSong);
+
